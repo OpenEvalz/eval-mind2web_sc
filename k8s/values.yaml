@@ -48,3 +48,12 @@ security:
 # gVisor changes behaviour: it blocks raw packet creation, prevents chroot escapes
 # and breaks sshpass. A model scoring zero because a syscall was blocked is a wrong
 # published result, not a model failure. Classify and record at onboarding.
+
+# ── Image verification (2026-08-25) ──────────────────────────────────────────
+# Resolved against the live registry over the OCI distribution API. This proves the
+# reference exists and is pullable; it does NOT prove the container behaves correctly
+# under gVisor, which needs a Linux cluster.
+image_verification:
+  checked: 2026-08-25
+  resolved: 1
+  unresolved: 0

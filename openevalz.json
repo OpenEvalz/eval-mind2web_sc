@@ -1,0 +1,43 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "mind2web_sc",
+    "slug": "mind2web-sc",
+    "title": "Mind2Web-SC",
+    "group": "Safeguards",
+    "tags": [
+      "Agent"
+    ],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/mind2web_sc",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-B",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "sandbox-local",
+    "cost_class": "high",
+    "sandbox": [
+      "solver"
+    ],
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "mind2web_sc",
+      "samples": 200
+    }
+  ],
+  "total_samples": 200,
+  "external_assets": [],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
